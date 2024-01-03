@@ -2,7 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .projectDataSection:first-child > div > img {
-    width: 60% !important;
+  width: 60% !important;
+}
+
+.customMargin {
+  margin-top: 2.5rem !important;
+}
+
+.customMargin4em {
+  margin-top: 4rem !important;
+}
+
+.customMargin7 {
+  margin-top: 0.7rem !important;
 }

@@ -172,20 +172,13 @@ export default function page() {
             <br /> changing the world one pixel at a time.
           </p>
           {/* Sections */}
-          <div
-            className="w-full sm:w-full lg:w-4/5 flex flex-col lg:flex-row gap-14"
-            style={{ marginTop: "4rem !important" }}
-          >
+          <div className="w-full sm:w-full lg:w-4/5 flex flex-col lg:flex-row gap-14 customMargin4em">
             <div>
               <h5 className="text-indigo-500 font-bold text-xl">experience</h5>
               <div>
                 {data.map((data, index) => {
                   return (
-                    <div
-                      key={index}
-                      style={{ marginTop: "2.5rem !important" }}
-                      className="space-y-2"
-                    >
+                    <div key={index} className="space-y-2 customMargin">
                       <h5 className="text-xl font-medium text-gray-600">
                         {data.role}
                       </h5>
@@ -211,10 +204,7 @@ export default function page() {
               {/* Contact */}
               <div>
                 <h5 className="text-indigo-500 font-bold text-xl">contact</h5>
-                <div
-                  style={{ marginTop: ".7rem !important" }}
-                  className="space-y-1"
-                >
+                <div className="space-y-1 customMargin7">
                   {contactInfo.map(({ title }, index) => {
                     return (
                       <p
@@ -231,10 +221,7 @@ export default function page() {
 
               <div>
                 <h5 className="text-indigo-500 font-bold text-xl">education</h5>
-                <div
-                  style={{ marginTop: ".7rem !important" }}
-                  className="space-y-4"
-                >
+                <div className="space-y-4 customMargin7">
                   {education.map(
                     ({ schoolName, subject, percentage }, index) => {
                       return (
@@ -266,10 +253,7 @@ export default function page() {
                 <h5 className="text-indigo-500 font-bold text-xl">
                   What I Like
                 </h5>
-                <div
-                  style={{ marginTop: ".7rem !important" }}
-                  className="space-y-4"
-                >
+                <div className="space-y-4 customMargin7">
                   {WhatILike.map(({ title, type, favourite }, index) => {
                     return (
                       <div className="space-y-2" key={index}>
