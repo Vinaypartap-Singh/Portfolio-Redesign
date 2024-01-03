@@ -36,11 +36,101 @@ export default function page() {
     },
   ];
 
+  const contactInfo = [
+    {
+      title: "vinay.netlify.app",
+    },
+    {
+      title: "developervsandhu@gmail.com",
+    },
+    {
+      title: "+1 (647) 924-6141",
+    },
+  ];
   const education = [
     {
-        
-    }
-  ]
+      schoolName: "Guru Arjan Dev Khalsa College",
+      subject: "Physics, Chemistry & Maths",
+      percentage: "84.6%",
+    },
+    {
+      schoolName: "Georgian@ILAC",
+      subject: "Computer Programming",
+      percentage: "Not Disclosed",
+    },
+  ];
+
+  const WhatILike = [
+    {
+      title: "For better Communication",
+      type: "Reading",
+      favourite: "Favourite Book: Steve Jobs",
+    },
+    {
+      title: "For better Communication",
+      type: "Listening Podcasts",
+      favourite: "Favourite Poscast: Action Hero Vidyut Jammwal",
+    },
+    {
+      title: "Learnings",
+      type: "Technology & Daily News",
+      favourite:
+        "I follow daily.dev chrome extension to get latest tech news daily.",
+    },
+  ];
+
+  const UIUX = [
+    {
+      tool: "Figma",
+    },
+    {
+      tool: "Adobe XD",
+    },
+  ];
+
+  const Coding = [
+    {
+      skill: "Html, Css",
+    },
+
+    {
+      skill: "Javascript",
+    },
+    {
+      skill: "React JS",
+    },
+    {
+      skill: "React Native",
+    },
+    {
+      skill: "Firebase",
+    },
+  ];
+
+  const CMS = [
+    {
+      tool: "WordPress",
+    },
+    {
+      tool: "Shopify",
+    },
+    {
+      tool: "Liquid (Theme Development)",
+    },
+  ];
+
+  const others = [
+    {
+      tool: "Canva",
+    },
+    {
+      tool: "Google Sites",
+    },
+    {
+      tool: "MongoDB",
+    },
+  ];
+
   return (
     <div>
       <div className="max-w-5xl m-auto px-5">
@@ -59,8 +149,13 @@ export default function page() {
             Shopify, Wordpress, HTML, CSS, Javascript, React JS, React Native,
             and more.
           </p>
-          <button className="border-2 py-3 px-8 rounded-md border-indigo-600 text-indigo-600 hover:bg-violet-600 hover:text-white transition-all">
-            View Resume
+          <button className="border-2 py-3 px-8 rounded-md border-indigo-600 text-indigo-600 hover:bg-violet-600 hover:text-white transition-all mt-5">
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/1vXiQ64bsy40LD5mkzylpFe2cgMTBgAk9/view?usp=sharing"
+            >
+              View Resume
+            </a>
           </button>
           <p className="text-indigo-600 font-light tracking-widest">
             PDF | Preview Available | 342 KB | 1 Page
@@ -78,7 +173,7 @@ export default function page() {
           </p>
           {/* Sections */}
           <div
-            className="w-full sm:w-full lg:w-4/5 flex flex-col lg:flex-row"
+            className="w-full sm:w-full lg:w-4/5 flex flex-col lg:flex-row gap-14"
             style={{ marginTop: "4rem !important" }}
           >
             <div>
@@ -87,17 +182,22 @@ export default function page() {
                 {data.map((data, index) => {
                   return (
                     <div
+                      key={index}
                       style={{ marginTop: "2.5rem !important" }}
                       className="space-y-2"
                     >
-                      <h5 className="text-xl font-semibold">{data.role}</h5>
+                      <h5 className="text-xl font-medium text-gray-600">
+                        {data.role}
+                      </h5>
                       <div className="flex justify-between items-center">
-                        <h5 className="text-lg">{data.companyName}</h5>
+                        <h5 className="text-lg text-gray-600">
+                          {data.companyName}
+                        </h5>
                         <h5 className="text-md text-gray-400 italic">
                           {data.timePeriod}
                         </h5>
                       </div>
-                      <p className="text-lg tracking-wider">
+                      <p className="text-lg tracking-wider  text-gray-600">
                         "In my tenure at CodePaper, I had the privilege of
                         contributing to a diverse array of projects, showcasing
                         the versatility of my skills and expertise."
@@ -107,46 +207,128 @@ export default function page() {
                 })}
               </div>
             </div>
-            <div className="pl-8 space-y-8">
+            <div className="mt-10 lg:mt-0 lg:pl-8 space-y-8">
+              {/* Contact */}
               <div>
                 <h5 className="text-indigo-500 font-bold text-xl">contact</h5>
                 <div
                   style={{ marginTop: ".7rem !important" }}
                   className="space-y-1"
                 >
-                  <p className="text-lg tracking-wide">vinay.netlify.app</p>
-                  <p className="text-lg tracking-wide">
-                    developervsandhu@gmail.com
-                  </p>
-                  <p className="text-lg tracking-wide">+1 (647) 924-6141</p>
+                  {contactInfo.map(({ title }, index) => {
+                    return (
+                      <p
+                        key={index}
+                        className="text-md tracking-wider text-gray-600"
+                      >
+                        {title}
+                      </p>
+                    );
+                  })}
                 </div>
               </div>
+              {/* Education */}
+
               <div>
                 <h5 className="text-indigo-500 font-bold text-xl">education</h5>
                 <div
                   style={{ marginTop: ".7rem !important" }}
-                  className="space-y-1"
+                  className="space-y-4"
                 >
-                  <p className="text-lg tracking-wide">vinay.netlify.app</p>
-                  <p className="text-lg tracking-wide">
-                    developervsandhu@gmail.com
-                  </p>
-                  <p className="text-lg tracking-wide">+1 (647) 924-6141</p>
+                  {education.map(
+                    ({ schoolName, subject, percentage }, index) => {
+                      return (
+                        <div className="space-y-1">
+                          <p
+                            key={index}
+                            className="text-md tracking-wider text-gray-600 font-medium"
+                          >
+                            {schoolName}
+                          </p>
+
+                          <p className="text-md tracking-wider text-gray-600">
+                            {subject}
+                          </p>
+                          {percentage && (
+                            <p className="text-md tracking-wider text-gray-600">
+                              {percentage}
+                            </p>
+                          )}
+                        </div>
+                      );
+                    }
+                  )}
                 </div>
               </div>
+              {/* What I Like */}
+
               <div>
-                <h5 className="text-indigo-500 font-bold text-xl">hobbies</h5>
+                <h5 className="text-indigo-500 font-bold text-xl">
+                  What I Like
+                </h5>
                 <div
                   style={{ marginTop: ".7rem !important" }}
-                  className="space-y-1"
+                  className="space-y-4"
                 >
-                  <p className="text-lg tracking-wide">vinay.netlify.app</p>
-                  <p className="text-lg tracking-wide">
-                    developervsandhu@gmail.com
-                  </p>
-                  <p className="text-lg tracking-wide">+1 (647) 924-6141</p>
+                  {WhatILike.map(({ title, type, favourite }, index) => {
+                    return (
+                      <div className="space-y-2">
+                        <p
+                          key={index}
+                          className="text-md tracking-wider text-gray-600 font-semibold"
+                        >
+                          {title}
+                        </p>
+
+                        <p className="text-md tracking-wider text-gray-600">
+                          {type}
+                        </p>
+
+                        <p className="text-md tracking-wider text-gray-600">
+                          {favourite}
+                        </p>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="max-w-5xl m-auto px-5 mt-10 mb-20">
+        <h5 className="text-indigo-500 font-bold text-xl">skills & tools</h5>
+        <div className="mt-5 flex justify-between lg:w-4/5 flex-wrap gap-5">
+          <div>
+            <h5 className="font-bold">UI/UX</h5>
+            <div className="space-y-1 mt-2">
+              {UIUX.map(({ tool }, index) => {
+                return <p>{tool}</p>;
+              })}
+            </div>
+          </div>
+          <div>
+            <h5 className="font-bold">Coding</h5>
+            <div className="space-y-1 mt-2">
+              {Coding.map(({ skill }, index) => {
+                return <p>{skill}</p>;
+              })}
+            </div>
+          </div>
+          <div>
+            <h5 className="font-bold">CMS</h5>
+            <div className="space-y-1 mt-2">
+              {CMS.map(({ tool }, index) => {
+                return <p>{tool}</p>;
+              })}
+            </div>
+          </div>
+          <div>
+            <h5 className="font-bold">Others</h5>
+            <div className="space-y-1 mt-2">
+              {others.map(({ tool }, index) => {
+                return <p>{tool}</p>;
+              })}
             </div>
           </div>
         </div>
