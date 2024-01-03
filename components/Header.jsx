@@ -13,7 +13,7 @@ export default function Header() {
     },
     {
       title: "Resume",
-      url: "/",
+      url: "/resume",
     },
   ];
   return (
