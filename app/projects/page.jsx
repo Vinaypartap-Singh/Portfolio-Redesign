@@ -1,14 +1,14 @@
 import { projectData } from "@/data/ProjectsData";
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { CiGlobe } from "react-icons/ci";
+import Image from "next/image";
 
 export default function page() {
   return (
     <div>
-      <div className="min-h-screen pt-10 mt-24 max-w-4xl m-auto">
+      <div className="min-h-screen pt-10 mt-32 max-w-4xl m-auto">
         <h1 className="text-2xl">Projects</h1>
         <p className="mt-5 tracking-wider">
           I have worked on various projects and had the opportunity to explore
@@ -20,19 +20,42 @@ export default function page() {
             return (
               <div
                 key={index}
-                className={`shadow-md h-fit text-3xl flex flex-col justify-center items-center transition-all rounded-md pt-10 m-5 projectDataSection`}
+                className={`shadow-md hover:shadow-xl h-fit text-3xl flex flex-col justify-center items-center transition-all rounded-md m-5 projectDataSection`}
               >
-                <Image
+                {/* <Image
                   src={data.image}
                   alt="Picture of the author"
                   width={1000}
                   height={1000}
                   className="w-full h-4/6 object-contain rounded-md px-10"
-                />
-                <div className="bg-white w-full h-full mt-10 p-5 rounded-md space-y-2">
+                /> */}
+                <div className="bg-white w-full h-full p-5 rounded-md space-y-4">
+                  <div className="flex flex-wrap justify-between items-center">
+                    <h4 className="text-xl tracking-widest my-6 font-semibold">
+                      {data.name}
+                    </h4>
+                    <div className="flex gap-2 items-center">
+                      {data.github && (
+                        <Link
+                          href={data.github}
+                          className="text-sm flex items-center gap-1"
+                        >
+                          <FaGithub />
+                        </Link>
+                      )}
+                      {data.websiteURL && (
+                        <Link
+                          href={data.websiteURL}
+                          className="text-sm flex items-center gap-1"
+                        >
+                          <CiGlobe />
+                        </Link>
+                      )}
+                    </div>
+                  </div>
+
                   <h5 className="text-sm">{data.technology}</h5>
-                  <h4 className="text-lg tracking-widest">{data.name}</h4>
-                  <div className="flex gap-2 items-center">
+                  <div className="flex gap-4 items-center">
                     {data.github && (
                       <Link
                         href={data.github}
@@ -54,6 +77,11 @@ export default function page() {
               </div>
             );
           })}
+        </div>
+        <div className="text-center mb-20 mt-10">
+          <button className="border-2 py-3 px-8 rounded-md border-indigo-600 text-indigo-600 hover:bg-violet-600 hover:text-white transition-all mt-5">
+            <Link href={"/projects"}>View All</Link>
+          </button>
         </div>
       </div>
     </div>
