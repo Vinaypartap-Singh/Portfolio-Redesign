@@ -30,12 +30,11 @@ export default function page() {
 
   const timeout = () => {
     setTimeout(() => {
-        console.log("Timeout");
+      console.log("Timeout");
     }, 3000);
-  }
+  };
 
   timeout();
-
 
   return (
     <div className="max-w-7xl m-auto">
@@ -46,12 +45,12 @@ export default function page() {
               Hi there.
             </h1>
             <p class="mb-8 leading-10">
-              I am VinayPartap Singh.Whether you're looking for a
-              straightforward website or a sophisticated e-commerce platform, I
-              have the knowledge and expertise required to realise your vision.
-              Utilize my web development services to help you grow your company.
-              Specialised in Shopify, Wordpress, HTML, CSS, Javascript, React
-              JS, React Native, and more.
+              My name is VinayPartap Singh and I am a web developer. Whether you
+              need a simple website or a complex e-commerce platform, I have the
+              skills and knowledge to bring your vision to life. Utilize my web
+              development services to help your business grow. I specialize in
+              Shopify, Wordpress, HTML, CSS, Javascript, React JS, React Native,
+              and more.
             </p>
             <h5 className="text-xl">Specialties:</h5>
             <div>

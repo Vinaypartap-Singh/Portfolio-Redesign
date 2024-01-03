@@ -15,11 +15,17 @@ export default function Header() {
       title: "Resume",
       url: "/resume",
     },
+    {
+      title: "Projects",
+      url: "/projects",
+    },
   ];
   return (
     <div>
       <div className="flex flex-col items-center p-8 sm:flex-row max-w-7xl justify-between m-auto">
-        <Link href={"/"} className="uppercase text-lg font-semibold">Vinaypartap Singh</Link>
+        <Link href={"/"} className="uppercase text-lg font-semibold">
+          Vinaypartap Singh
+        </Link>
         <div>
           <ul className="flex gap-14 mt-5 sm:mt-0">
             {navItems.map((data, index) => {

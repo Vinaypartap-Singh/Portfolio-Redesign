@@ -5,17 +5,22 @@ import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { CiGlobe } from "react-icons/ci";
 
-export default function ProjectsHome() {
+export default function page() {
   return (
     <div>
-      <div className="min-h-screen pt-10 mt-32 max-w-4xl m-auto">
-        <h1 className="text-2xl">Featured Work</h1>
+      <div className="min-h-screen pt-10 mt-24 max-w-4xl m-auto">
+        <h1 className="text-2xl">Projects</h1>
+        <p className="mt-5 tracking-wider">
+          I have worked on various projects and had the opportunity to explore
+          new technologies, while trying to solve new problems. This experience
+          has been great and has helped me improve myself on a daily basis.
+        </p>
         <div className="p-3 mt-10 grid gap-y-4 gap-x-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 bg-red-50  bg-transparent">
-          {projectData.slice(0, 5).map((data, index) => {
+          {projectData.map((data, index) => {
             return (
               <div
                 key={index}
-                className={`first:col-span-1 first:sm:col-span-2 shadow-md first:md:col-span-2 h-fit text-3xl flex flex-col justify-center items-center transition-all rounded-md pt-10 m-5 projectDataSection`}
+                className={`shadow-md h-fit text-3xl flex flex-col justify-center items-center transition-all rounded-md pt-10 m-5 projectDataSection`}
               >
                 <Image
                   src={data.image}
@@ -49,11 +54,6 @@ export default function ProjectsHome() {
               </div>
             );
           })}
-        </div>
-        <div className="text-center mb-20 mt-10">
-          <button className="border-2 py-3 px-8 rounded-md border-indigo-600 text-indigo-600 hover:bg-violet-600 hover:text-white transition-all mt-5">
-            <Link href={"/projects"}>View All</Link>
-          </button>
         </div>
       </div>
     </div>
