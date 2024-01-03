@@ -142,12 +142,12 @@ export default function page() {
             A look at my professional Experience
           </h2>
           <p className="leading-10 text-justify">
-            I am VinayPartap Singh.Whether you're looking for a straightforward
-            website or a sophisticated e-commerce platform, I have the knowledge
-            and expertise required to realise your vision. Utilize my web
-            development services to help you grow your company. Specialised in
-            Shopify, Wordpress, HTML, CSS, Javascript, React JS, React Native,
-            and more.
+            I am VinayPartap Singh.Whether you&apos;re looking for a
+            straightforward website or a sophisticated e-commerce platform, I
+            have the knowledge and expertise required to realise your vision.
+            Utilize my web development services to help you grow your company.
+            Specialised in Shopify, Wordpress, HTML, CSS, Javascript, React JS,
+            React Native, and more.
           </p>
           <button className="border-2 py-3 px-8 rounded-md border-indigo-600 text-indigo-600 hover:bg-violet-600 hover:text-white transition-all mt-5">
             <a
@@ -198,9 +198,9 @@ export default function page() {
                         </h5>
                       </div>
                       <p className="text-lg tracking-wider  text-gray-600">
-                        "In my tenure at CodePaper, I had the privilege of
+                        &quot;In my tenure at CodePaper, I had the privilege of
                         contributing to a diverse array of projects, showcasing
-                        the versatility of my skills and expertise."
+                        the versatility of my skills and expertise.&quot;
                       </p>
                     </div>
                   );
@@ -238,7 +238,7 @@ export default function page() {
                   {education.map(
                     ({ schoolName, subject, percentage }, index) => {
                       return (
-                        <div className="space-y-1">
+                        <div className="space-y-1" key={index}>
                           <p
                             key={index}
                             className="text-md tracking-wider text-gray-600 font-medium"
@@ -272,7 +272,7 @@ export default function page() {
                 >
                   {WhatILike.map(({ title, type, favourite }, index) => {
                     return (
-                      <div className="space-y-2">
+                      <div className="space-y-2" key={index}>
                         <p
                           key={index}
                           className="text-md tracking-wider text-gray-600 font-semibold"
@@ -303,7 +303,7 @@ export default function page() {
             <h5 className="font-bold">UI/UX</h5>
             <div className="space-y-1 mt-2">
               {UIUX.map(({ tool }, index) => {
-                return <p>{tool}</p>;
+                return <p key={index}>{tool}</p>;
               })}
             </div>
           </div>
@@ -311,7 +311,7 @@ export default function page() {
             <h5 className="font-bold">Coding</h5>
             <div className="space-y-1 mt-2">
               {Coding.map(({ skill }, index) => {
-                return <p>{skill}</p>;
+                return <p key={index}>{skill}</p>;
               })}
             </div>
           </div>
@@ -319,7 +319,7 @@ export default function page() {
             <h5 className="font-bold">CMS</h5>
             <div className="space-y-1 mt-2">
               {CMS.map(({ tool }, index) => {
-                return <p>{tool}</p>;
+                return <p key={index}>{tool}</p>;
               })}
             </div>
           </div>
@@ -327,7 +327,7 @@ export default function page() {
             <h5 className="font-bold">Others</h5>
             <div className="space-y-1 mt-2">
               {others.map(({ tool }, index) => {
-                return <p>{tool}</p>;
+                return <p key={index}>{tool}</p>;
               })}
             </div>
           </div>

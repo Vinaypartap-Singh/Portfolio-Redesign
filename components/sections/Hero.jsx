@@ -6,7 +6,7 @@ export default function Hero() {
     <div>
       <div className="p-4 flex items-center max-w-5xl m-auto min-h-[80vh]">
         <div className="space-y-6">
-          <h5 className="text-2xl">👋 Hey There, I'm Vinay</h5>
+          <h5 className="text-2xl">👋 Hey There, I&apos;m Vinay</h5>
           <h3 className="text-4xl leading-[2.9rem]">
             A <span className="text-indigo-600">Web Developer</span> changing
             the world one <br /> pixel at a time.

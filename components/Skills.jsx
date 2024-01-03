@@ -113,10 +113,12 @@ export default function Skills() {
         <h1 className="text-2xl">Skills</h1>
         <div className="flex flex-wrap justify-between gap-x-14 pt-32 gap-y-6">
           {skills.map(({ skill, icon, color }, index) => {
+            const borderColor = `border-[${color}]`;
+
             return (
               <div
                 key={index}
-                className={`flex items-center gap-2 border border-${color} px-6 py-2 cursor-pointer hover:border-[${color}] hover:text-[${color}] transition-all`}
+                className={`flex items-center gap-2 border px-6 py-2 cursor-pointer ${borderColor} rounded-md hover:text-[${color}] transition-all`}
               >
                 {skill} {icon}
               </div>
