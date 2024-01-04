@@ -31,28 +31,26 @@ export default function page({ params }) {
                     <span className="font-bold">Technology Used: </span>
                     {data.technology}
                   </p>
-                  <div className="keyFeaturesMargin">
-                    <p className="font-bold">Key Features: </p>
-                    {data.detailedFeatures.map((data, index) => {
-                      return (
-                        <div key={index} className="ml-0 lg:ml-10">
-                          <p className="text-md font-medium">
-                            {index + 1}: {data.title}
-                          </p>
-                          <ul className="list-decimal ml-0 lg:ml-20">
-                            {data.features.map((data, index) => {
-                              return (
-                                <li key={index} className="my-5 space-y-4">
-                                  <p className="font-medium">{data.title}</p>
-                                  <p>{data.description}</p>
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        </div>
-                      );
-                    })}
-                  </div>
+                  <p className="font-bold">Key Features: </p>
+                  {data.detailedFeatures.map((data, index) => {
+                    return (
+                      <div key={index} className="ml-0 lg:ml-10">
+                        <p className="text-md font-medium">
+                          {index + 1}: {data.title}
+                        </p>
+                        <ul className="list-decimal ml-0 lg:ml-20">
+                          {data.features.map((data, index) => {
+                            return (
+                              <li key={index} className="my-5 space-y-4">
+                                <p className="font-medium">{data.title}</p>
+                                <p>{data.description}</p>
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </div>
+                    );
+                  })}
 
                   <p className="text-lg tracking-wider leading-10">
                     <span className="font-bold">Challanges: </span>

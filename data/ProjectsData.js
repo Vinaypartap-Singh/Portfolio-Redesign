@@ -189,6 +189,16 @@ export const projectData = [
         ],
       },
     ],
+    challanges:
+      "Balancing dynamic content creation with Shopify Liquid, optimizing the site for performance, and ensuring a consistent and visually appealing design.",
+    solution:
+      "Leveraged the flexibility of Shopify Liquid for dynamic content, optimized images and assets for performance, and maintained a consistent design language throughout the website.",
+    results:
+      "Spartx Dev E-commerce delivers a visually appealing, responsive, and user-friendly online shopping experience. Positive feedback emphasizes the site's dynamic features, seamless checkout process, and overall design aesthetics.",
+    learnings:
+      "Enhanced skills in front-end development with Shopify Liquid, improved proficiency in responsive design, and gained insights into creating a seamless e-commerce user experience.",
+    futureImporvements:
+      "Considering future enhancements, such as implementing customer accounts, integrating additional payment gateways, and expanding product categories.",
   },
   {
     id: 3,
