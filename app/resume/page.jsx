@@ -133,7 +133,7 @@ export default function page() {
 
   return (
     <div>
-      <div className="max-w-5xl m-auto px-5">
+      <div className="max-w-5xl m-auto px-10 lg:px-0">
         <div className="container py-24 space-y-6">
           <h1 className="text-indigo-600 text-4xl font-semibold uppercase">
             Resume

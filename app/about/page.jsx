@@ -38,14 +38,14 @@ export default function page() {
   timeout();
 
   return (
-    <div className="max-w-7xl m-auto">
-      <section class="text-gray-600 body-font">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 class="title-font text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-bold mb-4 text-gray-900">
+    <div className="max-w-7xl m-auto px-10 lg:px-0">
+      <section className="text-gray-600 body-font">
+        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-start">
+          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-start ">
+            <h1 className="title-font text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-bold mb-4 text-gray-900">
               Hi there.
             </h1>
-            <p class="mb-8 leading-10">
+            <p className="mb-8 leading-10">
               My name is VinayPartap Singh and I am a web developer. Whether you
               need a simple website or a complex e-commerce platform, I have the
               skills and knowledge to bring your vision to life. Utilize my web
@@ -65,18 +65,18 @@ export default function page() {
                 })}
               </ul>
             </div>
-            <div class="flex justify-center mt-10">
+            <div className="flex justify-center mt-10">
               {/* Social Media Links Here */}
             </div>
           </div>
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
             <Image
               src={"https://dummyimage.com/720x600"}
               width={720}
               height={600}
             />
             {/* <img
-              class="object-cover object-center rounded"
+              className="object-cover object-center rounded"
               alt="hero"
               src="https://dummyimage.com/720x600"
             /> */}

@@ -17,7 +17,9 @@ export default function Hero() {
         </div>
       </div>
       <div className="flex justify-center items-center">
-        <IoIosArrowDown className="text-3xl" />
+        <a href="#skills">
+          <IoIosArrowDown className="text-3xl" />
+        </a>
       </div>
     </div>
   );

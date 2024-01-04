@@ -2,10 +2,11 @@ import dailyBlogImage from "../public/daily1blog.png";
 
 export const projectData = [
   {
+    id: 1,
     name: "Daily1Blog",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     technology: "React Js Firebase",
+    role: "Full Stack Web Developer",
     description:
       "Developed Daily1Blog, a dynamic blogging website using React.js and Firebase. This platform allows users to explore and read a variety of blog posts. With integrated user authentication, logged-in users gain the additional capability to contribute to the platform by uploading their own blog posts.",
     keyFeatures: [
@@ -27,13 +28,84 @@ export const projectData = [
       },
     ],
     websiteURL: "https://daily1blog.web.app/",
-    backgroundColor: "bg-pink-300"
+    detailedFeatures: [
+      {
+        title: "User Authentication",
+        features: [
+          {
+            title: "Secure Sign-Up/Login",
+            description:
+              "Users can create accounts securely and log in using Firebase Authentication.",
+          },
+          {
+            title: "Personalized Profiles",
+            description:
+              "Each user has a unique profile with customizable details.",
+          },
+        ],
+      },
+      {
+        title: "Blog Reading",
+        features: [
+          {
+            title: "Explore Posts",
+            description:
+              "Users can browse and read a diverse range of blog posts.",
+          },
+          {
+            title: "Search Functionality",
+            description:
+              "Implemented a search feature for efficient post discovery.",
+          },
+        ],
+      },
+      {
+        title: "User Contribution",
+        features: [
+          {
+            title: "Upload Posts",
+            description:
+              "Authenticated users can contribute to Daily1Blog by uploading their own blog posts.",
+          },
+          {
+            title: "Post Management",
+            description: "Users can edit and delete their uploaded posts.",
+          },
+        ],
+      },
+      {
+        title: "Responsive Design",
+        features: [
+          {
+            title: "Cross-Device Compatibility",
+            description:
+              "Ensured a responsive design for optimal user experience on various devices.",
+          },
+          {
+            title: "Intuitive Navigation",
+            description:
+              "Designed a user-friendly interface for easy navigation and post discovery.",
+          },
+        ],
+      },
+    ],
+    challanges:
+      "Balancing user authentication security with a seamless user experience, implementing a flexible and efficient blog post management system, and optimizing the site for responsive design.",
+    solution:
+      "Leveraged React.js for front-end development and Firebase for user authentication and data storage. Implemented security measures for user authentication and designed a modular and responsive UI for an optimal user experience.",
+    results:
+      "Daily1Blog provides users with a dynamic and secure platform for reading and contributing blog posts. Positive feedback highlights the site's clean design, intuitive navigation, and the seamless integration of user contributions.",
+    learnings:
+      "Enhanced proficiency in full-stack development, improved skills in user authentication, and gained insights into creating a user-friendly blogging platform.",
+    futureImporvements:
+      "Considering future enhancements, such as implementing user comments, social sharing features, and further customization options for user profiles",
   },
   {
+    id: 2,
     name: "Spartx Dev",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     technology: "Front-End Development, Shopify Liquid",
+    role: "Front-end Web Developer",
     description:
       "Built Spartx Dev, a robust e-commerce website from the ground up, utilizing Shopify Liquid for dynamic content and templating. This project seamlessly integrates HTML, CSS, and JavaScript to create a visually appealing and user-friendly online shopping experience.",
     keyFeatures: [
@@ -55,12 +127,73 @@ export const projectData = [
       },
     ],
     websiteURL: "https://spartx-dev.myshopify.com/",
-    backgroundColor: "yellow"
+    detailedFeatures: [
+      {
+        title: "Dynamic Product Pages",
+        features: [
+          {
+            title: "Shopify Liquid Templating",
+            description:
+              "Utilized Shopify Liquid to dynamically generate product pages.",
+          },
+          {
+            title: "Product Information",
+            description:
+              "Displayed detailed product information, pricing, and images.",
+          },
+        ],
+      },
+      {
+        title: "Responsive Design",
+        features: [
+          {
+            title: "Cross-Device Compatibility:",
+            description:
+              "Ensured a responsive design for a seamless shopping experience on various devices.",
+          },
+          {
+            title: "Mobile-Friendly Interface",
+            description:
+              "Optimized the UI for smaller screens while maintaining visual appeal.",
+          },
+        ],
+      },
+      {
+        title: "Interactive cart and checkout",
+        features: [
+          {
+            title: "Add to Cart Functionality",
+            description:
+              "Implemented an interactive Add to Cart feature for a user-friendly shopping process.",
+          },
+          {
+            title: "Secure Checkout",
+            description:
+              "Created a secure and streamlined checkout process for a seamless customer journey.",
+          },
+        ],
+      },
+      {
+        title: "Navigation and Filters",
+        features: [
+          {
+            title: "Intuitive Navigation",
+            description:
+              "Designed a user-friendly navigation system for easy product discovery.",
+          },
+          {
+            title: "Product Filters",
+            description:
+              "Integrated filters for efficient product categorization and search",
+          },
+        ],
+      },
+    ],
   },
   {
+    id: 3,
     name: "BI Millwork",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     technology: "Front-End Development, Shopify Liquid",
     description:
       "Developed the Bi Millwork website, an e-commerce platform specializing in millwork products. Leveraging the power of Bootstrap, HTML, CSS, and JavaScript, this project aims to provide a visually compelling, responsive, and feature-rich online shopping experience for users seeking high-quality millwork solutions.",
@@ -83,12 +216,12 @@ export const projectData = [
       },
     ],
     websiteURL: "https://b-i-millwork.myshopify.com",
-    backgroundColor: "orange"
+    backgroundColor: "orange",
   },
   {
+    id: 4,
     name: "Laundry Application",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     technology: "React Native & Firebase, Redux Toolkit",
     description:
       "Developed LaundryPal, a cutting-edge laundry application using React Native and Firebase. The app seamlessly integrates features such as user profiles, order history, date picking for delivery, and automatic location detection. LaundryPal offers users a convenient and efficient way to manage their laundry needs with a user-friendly interface.",
@@ -112,12 +245,12 @@ export const projectData = [
     ],
     github: "https://github.com/developervinay1/React-Native-LaundryApp",
     websiteURL: "https://google.com/",
-    backgroundColor: "violet"
+    backgroundColor: "violet",
   },
   {
+    id: 5,
     name: "CloudMedia Vault",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     technology: "React Native & Firebase",
     description:
       "Developed CloudMedia Vault, a secure mobile application built with React Native and Firebase. The app provides users with a platform to securely store images and videos on the cloud, ensuring data privacy. It incorporates robust authentication features to guarantee a secure user experience.",
@@ -136,12 +269,12 @@ export const projectData = [
       },
     ],
     github: "https://github.com/developervinay1/ImageUploaderApp-React-Native",
-    backgroundColor: "purple"
+    backgroundColor: "purple",
   },
   {
+    id: 6,
     name: "Thread Clone",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     technology: "React Native & Firebase",
     description:
       "Developed Threads Clone, a robust social media application using React Native and Firebase. This mobile app empowers users to create accounts, connect by following each other, upload posts, and manage personalized profile pages. Threads Clone provides a seamless and engaging platform for social interactions on the go.",
@@ -164,12 +297,12 @@ export const projectData = [
       },
     ],
     github: "https://github.com/developervinay1/ThreadsClone-RN",
-    backgroundColor: "fuchsia"
+    backgroundColor: "fuchsia",
   },
   {
+    id: 7,
     name: "Stay Easy",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     technology: "React Native & Firebase",
     description:
       "Created StayEasy, an intuitive hotel booking application using React Native and Firebase. This mobile app streamlines the hotel reservation process, offering users authentication features, the ability to bookmark favorite places, and a convenient booking system for planning their stays.",
@@ -192,12 +325,12 @@ export const projectData = [
       },
     ],
     github: "https://github.com/developervinay1/BookingApp-RN",
-    backgroundColor: "pink"
+    backgroundColor: "pink",
   },
   {
+    id: 8,
     name: "Youtube UI Clone",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     technology: "React Native",
     description:
       "Developed TubeClone, a React Native application that replicates the clean and simple home page design of YouTube. This project focused on recreating the essential visual elements and user interface components of YouTube's home feed, providing users with a familiar and intuitive experience",
@@ -216,12 +349,12 @@ export const projectData = [
       },
     ],
     github: "https://github.com/developervinay1/React-Native-YoutubeClone",
-    backgroundColor: "blue"
+    backgroundColor: "blue",
   },
   {
+    id: 9,
     name: "Login/Signup Page UI",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     technology: "React Native",
     description:
       "Extended TubeClone, the React Native YouTube UI clone, to include a clean and user-friendly login/signup page. This addition enhances the user experience by providing a secure and personalized environment for accessing and interacting with the YouTube-like content.",
@@ -244,12 +377,12 @@ export const projectData = [
       },
     ],
     github: "https://github.com/developervinay1/React-Native-LoginSignupUI",
-    backgroundColor: "red"
+    backgroundColor: "red",
   },
   {
+    id: 10,
     name: "App Store UI",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     technology: "React Native",
     description:
       "Developed AppStoreClone, a React Native application that replicates the user interface of the App Store. This project aimed to showcase the versatility of React Native in creating a visually appealing and responsive app discovery platform, featuring clean design elements and intuitive navigation.",
@@ -264,12 +397,12 @@ export const projectData = [
       },
     ],
     github: "https://github.com/developervinay1/AppStoreUI-React-Native",
-    backgroundColor: "lime"
+    backgroundColor: "lime",
   },
   {
+    id: 11,
     name: "FruitShopUI",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     technology: "React Native",
     description:
       "Developed FruitShop UI, a React Native application that replicates the user interface of the Fruit Shop. This project aimed to showcase the versatility of React Native in creating a visually appealing and responsive app discovery platform, featuring clean design elements and intuitive navigation.",
@@ -286,9 +419,9 @@ export const projectData = [
     github: "https://github.com/developervinay1/FruitShopUI",
   },
   {
+    id: 12,
     name: "Music Website",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     technology: "Development",
     description:
       "Developed MusicHub, a React.js and Firebase-powered music website, empowering users to explore and upload their favorite tracks seamlessly. The platform combines user authentication, real-time database functionality, and an intuitive interface, resulting in a dynamic space for music enthusiasts to engage. Successfully increased user engagement by 20%, setting the stage for future enhancements in playlist features and social sharing options.",
@@ -308,12 +441,12 @@ export const projectData = [
     ],
     websiteURL: "https://music-app-4ec2b.web.app/",
     github: "https://github.com/developervinay1/react-music-app",
-    backgroundColor: "stone"
+    backgroundColor: "stone",
   },
   {
+    id: 13,
     name: "Bubble Game",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     technology: "Html, Css",
     description:
       "Designed BubblePop, a captivating web game using HTML, CSS, and JavaScript, introducing an innovative bubble event concept for dynamic interactivity. The game offers users an engaging bubble-popping experience with responsive design. Positive user feedback and increased interaction highlight its success. Future plans involve expanding the game with additional levels and social features for a more enriched gaming community.",
@@ -331,12 +464,12 @@ export const projectData = [
     github:
       "https://github.com/developervinay1/Javascript-Project-Bubble-Game/tree/main",
     websiteURL: "https://bubble-game-vinay.netlify.app/",
-    backgroundColor: "amber"
+    backgroundColor: "amber",
   },
   {
+    id: 14,
     name: "Zomato Clone",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     technology: "React Js and Firebase",
     description:
       "Introducing Zomato Clone, a React.js and Firebase-powered Zomato clone that seamlessly blends user authentication with dynamic data filtering on the product page. This user-friendly platform delivers a personalized dining experience, showcasing my skills in full-stack development. Positive user engagement underscores the success of this project, with future plans to enhance features such as order tracking and social sharing for an elevated dining journey.",
@@ -355,13 +488,13 @@ export const projectData = [
       },
     ],
     websiteURL: "https://zomato-clone-p1.netlify.app/",
-    backgroundColor: "red"
+    backgroundColor: "red",
   },
   {
+    id: 15,
     name: "Abstract Clone",
     technology: "Html, Css",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     description:
       "Crafted ResponsiveWeb, a sleek website using HTML and CSS with a focus on responsive design. Prioritizing simplicity, the site offers an intuitive user interface adaptable to various devices. Its lightweight structure ensures swift loading, providing a seamless experience. Positive feedback attests to the success of this project, with future plans to enhance content while preserving the site's clean, responsive nature.",
     keyFeatures: [
@@ -379,13 +512,13 @@ export const projectData = [
       },
     ],
     websiteURL: "https://abstract-l1.netlify.app/",
-    backgroundColor: "green"
+    backgroundColor: "green",
   },
   {
+    id: 16,
     name: "Ableton Clone",
     technology: "Html, Css",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     description:
       "Emulating the ethos of Ableton, this website harmoniously blends simplicity and responsiveness. Crafted with HTML and CSS, it ensures an intuitive user experience across devices. A lightweight design enables swift loading, creating a seamless platform for exploration. Positive reception underscores its success, with future considerations for content enrichment while preserving its clean and responsive allure.",
     keyFeatures: [
@@ -403,13 +536,13 @@ export const projectData = [
       },
     ],
     websiteURL: "https://abletonl1.netlify.app/",
-    backgroundColor: "emerald"
+    backgroundColor: "emerald",
   },
   {
+    id: 17,
     name: "Dice Game",
     technology: "Html, Css & Javascript",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     description:
       "Presenting RollIt, a lively dice game crafted with HTML, CSS, and JavaScript. With every refresh, the game dynamically updates, offering an unpredictable and entertaining experience. The project seamlessly blends front-end technologies to create a visually engaging and responsive gaming platform. Users appreciate its simplicity and the thrill of discovering a new outcome with each roll, making it a delightful web-based game.",
     keyFeatures: [
@@ -423,13 +556,13 @@ export const projectData = [
       },
     ],
     websiteURL: "https://dicegamevd.netlify.app/",
-    backgroundColor: "sky"
+    backgroundColor: "sky",
   },
   {
+    id: 18,
     name: "Drum Kit",
     technology: "Html, Css & Javascript",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     description:
       "Developed DrumKit, a dynamic drum kit website using HTML, CSS, and JavaScript. Users can play drum sounds either by pressing keyboard keys or clicking on visually appealing drum images. The project seamlessly merges front-end technologies, creating an engaging and interactive musical experience.",
     keyFeatures: [
@@ -447,13 +580,13 @@ export const projectData = [
       },
     ],
     websiteURL: "https://drumkitvd.netlify.app/",
-    backgroundColor: "rose"
+    backgroundColor: "rose",
   },
   {
+    id: 19,
     name: "Edfocus",
     technology: "Html, Css",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     description:
       "Developed EdFocus, a single-page education website utilizing HTML and CSS, prioritizing responsive design. The site offers an engaging platform for educational content with seamless navigation across various devices, ensuring an optimal user experience.",
     keyFeatures: [
@@ -467,13 +600,13 @@ export const projectData = [
       },
     ],
     websiteURL: "https://educationtt.netlify.app/",
-    backgroundColor: "pink"
+    backgroundColor: "pink",
   },
   {
+    id: 20,
     name: "Microsoft Clone",
     technology: "Html, Css",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     description:
       "Developed a responsive clone of the Microsoft website using HTML and CSS, aimed at replicating the visual appeal and user interface of the original site. The project encompasses key elements such as the header navigation, search functionality, and a responsive main section with a hero banner.",
     keyFeatures: [
@@ -491,13 +624,13 @@ export const projectData = [
       },
     ],
     websiteURL: "https://microsoft-clone-v1.netlify.app/",
-    backgroundColor: "purple"
+    backgroundColor: "purple",
   },
   {
+    id: 21,
     name: "Netlfix Clone",
     technology: "React JS",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     description:
       "Developed a Netflix clone using React.js, featuring dynamic fetching of movie data from an API to create a realistic and engaging streaming experience. The application mirrors the Netflix interface, offering users a visually appealing layout and seamless navigation.",
     keyFeatures: [
@@ -516,13 +649,13 @@ export const projectData = [
       },
     ],
     websiteURL: "https://netflix-clone-devil.netlify.app/",
-    backgroundColor: "violet"
+    backgroundColor: "violet",
   },
   {
+    id: 22,
     name: "Flipkart Clone",
     technology: "React JS",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     description:
       "Designed and implemented a responsive Flipkart clone using React.js, featuring dynamic fetching of product data from an API to create a realistic and interactive e-commerce experience. The application replicates key features of Flipkart, providing users with a visually appealing interface and seamless product browsing.",
     keyFeatures: [
@@ -541,13 +674,13 @@ export const projectData = [
       },
     ],
     websiteURL: "https://flipkart-clone-devil.netlify.app/",
-    backgroundColor: "blue"
+    backgroundColor: "blue",
   },
   {
+    id: 23,
     name: "BI Millwork",
     technology: "WordPress",
-    image:
-      dailyBlogImage,
+    image: dailyBlogImage,
     description:
       "BI Millwork's website stands as a prime example of modern design and efficient functionality in the cabinetry industry. It features a responsive layout, ensuring seamless viewing across all devices, from desktops to mobile phones and tablets. The site effectively showcases BI Millwork's expertise in crafting cabinet solutions for commercial multi-family properties, blending visual appeal with detailed service information.",
     keyFeatures: [
@@ -561,6 +694,6 @@ export const projectData = [
       },
     ],
     websiteURL: "https://bimillwork.com/",
-    backgroundColor: "teal"
+    backgroundColor: "teal",
   },
 ];

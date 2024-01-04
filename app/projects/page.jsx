@@ -3,24 +3,28 @@ import React from "react";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { CiGlobe } from "react-icons/ci";
-import Image from "next/image";
+import { PiArrowSquareOutFill } from "react-icons/pi";
 
 export default function page() {
   return (
     <div>
-      <div className="min-h-screen pt-10 mt-32 max-w-4xl m-auto">
-        <h1 className="text-2xl">Projects</h1>
-        <p className="mt-5 tracking-wider">
-          I have worked on various projects and had the opportunity to explore
-          new technologies, while trying to solve new problems. This experience
-          has been great and has helped me improve myself on a daily basis.
-        </p>
+      <div className="min-h-screen pt-10 mt-10 max-w-4xl m-auto">
+        <div className="px-10 lg:px-0">
+          <h1 className="text-2xl">Projects</h1>
+          <p className="mt-5 tracking-wider">
+            I have worked on various projects and had the opportunity to explore
+            new technologies, while trying to solve new problems. This
+            experience has been great and has helped me improve myself on a
+            daily basis.
+          </p>
+        </div>
+
         <div className="p-3 mt-10 grid gap-y-4 gap-x-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 bg-red-50  bg-transparent">
           {projectData.map((data, index) => {
             return (
               <div
                 key={index}
-                className={`shadow-md hover:shadow-xl h-fit text-3xl flex flex-col justify-center items-center transition-all rounded-md m-5 projectDataSection`}
+                className={`cursor-pointer shadow-md hover:shadow-xl h-fit text-3xl flex flex-col justify-center items-center transition-all rounded-md m-5 projectDataSection`}
               >
                 {/* <Image
                   src={data.image}
@@ -35,6 +39,9 @@ export default function page() {
                       {data.name}
                     </h4>
                     <div className="flex gap-2 items-center">
+                      <Link href={`/projects/${data.id}`}>
+                        <PiArrowSquareOutFill className="text-sm flex items-center gap-1" />
+                      </Link>
                       {data.github && (
                         <Link
                           href={data.github}

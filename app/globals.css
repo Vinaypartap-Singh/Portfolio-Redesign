@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .projectDataSection:first-child > div > img {
   width: 60% !important;
 }
@@ -16,4 +20,7 @@
 
 .customMargin7 {
   margin-top: 0.7rem !important;
+}
+
+.keyFeaturesMargin {
 }
