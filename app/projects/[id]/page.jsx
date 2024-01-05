@@ -39,7 +39,7 @@ export default function page({ params }) {
                           {index + 1}: {data.title}
                         </p>
                         <ul className="list-decimal ml-0 lg:ml-20">
-                          {data.features.map((data, index) => {
+                          {data?.features?.map((data, index) => {
                             return (
                               <li key={index} className="my-5 space-y-4">
                                 <p className="font-medium">{data.title}</p>

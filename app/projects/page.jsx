@@ -35,7 +35,7 @@ export default function page() {
                 /> */}
                 <div className="bg-white w-full h-full p-5 rounded-md space-y-4">
                   <div className="flex flex-wrap justify-between items-center">
-                    <h4 className="text-xl tracking-widest my-6 font-semibold">
+                    <h4 className="text-xl tracking-widest my-6 font-medium">
                       {data.name}
                     </h4>
                     <div className="flex gap-2 items-center">
@@ -87,7 +87,7 @@ export default function page() {
         </div>
         <div className="text-center mb-20 mt-10">
           <button className="border-2 py-3 px-8 rounded-md border-indigo-600 text-indigo-600 hover:bg-violet-600 hover:text-white transition-all mt-5">
-            <Link href={"/projects"}>View All</Link>
+            <Link href={"/resume"}>Resume</Link>
           </button>
         </div>
       </div>
