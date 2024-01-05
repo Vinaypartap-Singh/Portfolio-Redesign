@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { CiGlobe } from "react-icons/ci";
-import Image from "next/image";
+import { PiArrowSquareOutFill } from "react-icons/pi";
 
 export default function ProjectsHome() {
   return (
@@ -39,6 +39,9 @@ export default function ProjectsHome() {
                       {data.name}
                     </h4>
                     <div className="flex gap-2 items-center">
+                      <Link href={`/projects/${data.id}`}>
+                        <PiArrowSquareOutFill className="text-sm flex items-center gap-1" />
+                      </Link>
                       {data.github && (
                         <Link
                           href={data.github}
@@ -58,7 +61,7 @@ export default function ProjectsHome() {
                     </div>
                   </div>
 
-                  <h5 className="text-sm">{data.technology}</h5>
+                  <h5 className="text-sm truncate">{data.technology}</h5>
                   <div className="flex gap-4 items-center">
                     {data.github && (
                       <Link

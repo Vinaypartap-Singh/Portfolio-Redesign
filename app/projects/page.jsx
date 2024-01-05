@@ -33,9 +33,9 @@ export default function page() {
                   height={1000}
                   className="w-full h-4/6 object-contain rounded-md px-10"
                 /> */}
-                <div className="bg-white w-full h-full p-5 rounded-md space-y-4">
+                <div className="bg-gradient-to-r from-slate-50 to-gray-50 bg-opacity-10  w-full h-full p-5 rounded-md space-y-4">
                   <div className="flex flex-wrap justify-between items-center">
-                    <h4 className="text-xl tracking-widest my-6 font-medium">
+                    <h4 className="text-xl tracking-widest my-8 font-medium">
                       {data.name}
                     </h4>
                     <div className="flex gap-2 items-center">
@@ -61,7 +61,7 @@ export default function page() {
                     </div>
                   </div>
 
-                  <h5 className="text-sm">{data.technology}</h5>
+                  <h5 className="text-sm truncate w-4/6">{data.technology}</h5>
                   <div className="flex gap-4 items-center">
                     {data.github && (
                       <Link
