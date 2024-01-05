@@ -26,28 +26,45 @@ export default function page() {
                 key={index}
                 className={`cursor-pointer shadow-md hover:shadow-xl h-fit text-3xl flex flex-col justify-center items-center transition-all rounded-md m-5 projectDataSection`}
               >
-                {/* <Image
-                  src={data.image}
-                  alt="Picture of the author"
-                  width={1000}
-                  height={1000}
-                  className="w-full h-4/6 object-contain rounded-md px-10"
-                /> */}
-                <div className="bg-gradient-to-r from-slate-50 to-gray-50 bg-opacity-10  w-full h-full p-5 rounded-md space-y-4">
-                  <div className="flex flex-wrap justify-between items-center">
-                    <h4 className="text-xl tracking-widest my-8 font-medium">
-                      {data.name}
-                    </h4>
-                    <div className="flex gap-2 items-center">
-                      <Link href={`/projects/${data.id}`}>
-                        <PiArrowSquareOutFill className="text-sm flex items-center gap-1" />
-                      </Link>
+                <Link href={`/projects/${data.id}`} className="w-full">
+                  <div className="bg-gradient-to-r from-slate-50 to-gray-50 bg-opacity-10  w-full h-full p-5 rounded-md space-y-4">
+                    <div className="flex flex-wrap justify-between items-center">
+                      <h4 className="text-xl tracking-widest my-8 font-medium">
+                        {data.name}
+                      </h4>
+                      <div className="flex gap-2 items-center">
+                        <Link href={`/projects/${data.id}`}>
+                          <PiArrowSquareOutFill className="text-sm flex items-center gap-1" />
+                        </Link>
+                        {data.github && (
+                          <Link
+                            href={data.github}
+                            className="text-sm flex items-center gap-1"
+                          >
+                            <FaGithub />
+                          </Link>
+                        )}
+                        {data.websiteURL && (
+                          <Link
+                            href={data.websiteURL}
+                            className="text-sm flex items-center gap-1"
+                          >
+                            <CiGlobe />
+                          </Link>
+                        )}
+                      </div>
+                    </div>
+
+                    <h5 className="text-sm truncate w-4/6">
+                      {data.technology}
+                    </h5>
+                    <div className="flex gap-4 items-center">
                       {data.github && (
                         <Link
                           href={data.github}
                           className="text-sm flex items-center gap-1"
                         >
-                          <FaGithub />
+                          Github <FaGithub />
                         </Link>
                       )}
                       {data.websiteURL && (
@@ -55,39 +72,19 @@ export default function page() {
                           href={data.websiteURL}
                           className="text-sm flex items-center gap-1"
                         >
-                          <CiGlobe />
+                          Visit Now <CiGlobe />
                         </Link>
                       )}
                     </div>
                   </div>
-
-                  <h5 className="text-sm truncate w-4/6">{data.technology}</h5>
-                  <div className="flex gap-4 items-center">
-                    {data.github && (
-                      <Link
-                        href={data.github}
-                        className="text-sm flex items-center gap-1"
-                      >
-                        Github <FaGithub />
-                      </Link>
-                    )}
-                    {data.websiteURL && (
-                      <Link
-                        href={data.websiteURL}
-                        className="text-sm flex items-center gap-1"
-                      >
-                        Visit Now <CiGlobe />
-                      </Link>
-                    )}
-                  </div>
-                </div>
+                </Link>
               </div>
             );
           })}
         </div>
         <div className="text-center mb-20 mt-10">
           <button className="border-2 py-3 px-8 rounded-md border-indigo-600 text-indigo-600 hover:bg-violet-600 hover:text-white transition-all mt-5">
-            <Link href={"/resume"}>Resume</Link>
+            <Link href={"/resume"}>View Resume</Link>
           </button>
         </div>
       </div>
