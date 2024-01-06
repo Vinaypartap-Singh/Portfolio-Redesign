@@ -1,5 +1,9 @@
 import { projectData } from "@/data/ProjectsData";
 import React from "react";
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
+import { CiGlobe } from "react-icons/ci";
+import { PiArrowSquareOutFill } from "react-icons/pi";
 
 export default function page({ params }) {
   const id = params.id;
@@ -12,14 +16,36 @@ export default function page({ params }) {
 
   console.log("Filtered Data", filteredData);
   return (
-    <div>
+    <div className="mb-32">
       <div className="pt-10 mt-10 max-w-4xl m-auto">
         {filteredData ? (
           <div>
             {filteredData.map((data, index) => {
               return (
                 <div className="space-y-8" key={index}>
-                  <h1 className="text-4xl tracking-wider">{data.name}</h1>
+                  <div className="flex items-center justify-between">
+                    <h1 className="text-4xl tracking-wider">{data.name}</h1>
+                    <div className="flex gap-3">
+                      {data.github && (
+                        <Link
+                          href={data.github}
+                          className="text-sm flex items-center gap-1  hover:underline hover:text-red-500 transition-all hover:font-bold"
+                        >
+                          Github <FaGithub />
+                        </Link>
+                      )}
+                      {data.websiteURL && (
+                        <Link
+                          href={data.websiteURL}
+                          className="text-md flex items-center gap-1 hover:underline hover:text-red-500 transition-all hover:font-bold"
+                        >
+                          Visit Now
+                          <PiArrowSquareOutFill />
+                        </Link>
+                      )}
+                    </div>
+                  </div>
+
                   <p className="leading-8 text-lg tracking-wider">
                     {data.description}
                   </p>
@@ -72,6 +98,26 @@ export default function page({ params }) {
                     <span className="font-bold">Future Improvements: </span>
                     {data.futureImporvements}
                   </p>
+
+                  <div className="flex gap-3">
+                    {data.github && (
+                      <Link
+                        href={data.github}
+                        className="text-sm flex items-center gap-1  hover:underline hover:text-red-500 transition-all hover:font-bold"
+                      >
+                        Github <FaGithub />
+                      </Link>
+                    )}
+                    {data.websiteURL && (
+                      <Link
+                        href={data.websiteURL}
+                        className="text-md flex items-center gap-1 hover:underline hover:text-red-500 transition-all hover:font-bold"
+                      >
+                        Visit Now
+                        <PiArrowSquareOutFill />
+                      </Link>
+                    )}
+                  </div>
                 </div>
               );
             })}
