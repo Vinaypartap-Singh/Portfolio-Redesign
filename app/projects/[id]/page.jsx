@@ -2,7 +2,6 @@ import { projectData } from "@/data/ProjectsData";
 import React from "react";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
-import { CiGlobe } from "react-icons/ci";
 import { PiArrowSquareOutFill } from "react-icons/pi";
 
 export default function page({ params }) {
